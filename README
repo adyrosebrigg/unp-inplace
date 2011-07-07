@@ -1,14 +1,11 @@
 ### Readme: unp-inplace (shell script)
 ### Warning! ###
-
 I'm new to bash scripting, so watch out for bugs. Also, I haven't used 
 unp on very many types of archives, so I don't know its syntax in and 
 out. I think (hope) I've covered the basic functionality enough to make 
 this usable.
 
-
 ### About ###
-
 unp-inplace is a tiny little wrapper around unp. Just like unp, it lets 
 you unpack nearly any archive, without having to remember countless 
 shell commands and flags.
@@ -22,28 +19,19 @@ The end result is that no matter where you run unp-inplace from, you'll
 end up with ARCHIVE/ in the same place as ARCHIVE.gz, just where one 
 might expect it to go (if one were converting from a mac, as I am.)
 
-
 ### Installing ###
-
 You can install or remove unp-inplace using the provided install.sh 
 script.
 
-
 ### Usage ###
-
 unp-inplace [archive.gz] [somewhere/else/another.zip]
-
-or, just run it without arguments to get the info/usage text. 
-
+(or, just run it without arguments to get the short info/usage text.)
 
 ### .desktop ###
-
 I've also included a .desktop file, which /should/ allow you to 
 associate the script with mime-types in nautilus (so that selecting 
 and opening archive(s) runs unp-inplace on them in a shell). 
 I've yet to test this very much, and I don't think it works currently.
 
-
 ### License  ###
-
 Public domain; use, modify, and redistribute as you wish.
