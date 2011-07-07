@@ -21,7 +21,8 @@ might expect it to go (if one were converting from a mac, as I am.)
 
 ### Installing ###
 You can install or remove unp-inplace using the provided install.sh 
-script.
+script. Because it depends on unp (which isn't included), you'll need
+to install that on your own.
 
 ### Usage ###
 unp-inplace [archive.gz] [somewhere/else/another.zip]
