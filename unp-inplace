@@ -1,0 +1,20 @@
+#!/bin/bash
+############################################################### Info Message ###
+if ! [[ -n $@ ]]; then
+
+echo "  Script: unp-inplace"
+echo "  Author: Ed Cunningham"
+echo "  Usage : unp-inplace [files] - unpacks archives into their own directories."
+
+############################################################ Unpack Archives ###
+else
+for ARG in "$@"		# For each argument (archive file):
+do
+
+ARCHIVEPATH=$(readlink -f $ARG) # Get the full path to the archive,
+cd $(dirname $ARCHIVEPATH)	# cd to its parent directory,
+unp -U $ARCHIVEPATH		# unp the file there,
+cd -				# then return to the shell's last dir.
+
+done			# and reloop for the next archive.
+fi

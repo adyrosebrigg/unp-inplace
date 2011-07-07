@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Categories=Utility;
+Comment=Unpack (almost) everything
+TryExec="/usr/bin/unp-inplace %F"
+Name=Unp
+GenericName=Archive Unpacker
+
+MimeType=application/gzip;application/gzip-compressed;application/gzipped;application/octet-stream;application/x-compress;application/x-compressed;application/x-gunzip;application/x-gzip;gzip/document;image/xcf;application/x-bzip;application/x-bz2;application/bzip2;application/x-rar-compressed;application/x-7z-compressed;application/x-compressed;application/x-compress;application/zip;application/x-winzip;application/x-tar;application/x-stuffit;
+
+NoDisplay=true
+Terminal=true
