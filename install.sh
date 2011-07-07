@@ -18,6 +18,14 @@ until $done; do
 
 	case $option in
 	i)	# Install
+		# (first, make sure unp is here.)
+		hash unp 2>&- || { 
+		echo 1>&2 "Uh oh. I can't seem to find the command unp."
+		echo 1>&2 "Try installing it with your favorite package manager,"
+		echo 1>&2 "then come back here."
+		exit 1; } # if not, gtfo.
+
+		# Next, install the files.
 		sudo cp -vi unp-inplace /usr/bin
 		sudo cp -vi unp-inplace.desktop /usr/share/applications
 		done=true
