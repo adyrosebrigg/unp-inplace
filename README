@@ -37,3 +37,8 @@ I've yet to test this very much, but it seems to work on Debian/Gnome2.
 
 ### License  ###
 Public domain; use, modify, and redistribute as you wish.
+
+(note that the unp script itself, which isn't included here, is released
+under the GNU General Public License v2. As far as I know, I don't have
+to follow the terms of that license, since I'm neither modifying the unp
+code nor redistributing it.)
