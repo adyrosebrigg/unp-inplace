@@ -1,5 +1,7 @@
 #!/bin/bash
 
+srcdir=$(dirname $(readlink -f $0))	# Find the installer's parent directory.
+
 done=false
 until $done; do
 
@@ -26,8 +28,8 @@ until $done; do
 		exit 1; } # if not, gtfo.
 
 		# Next, install the files.
-		sudo cp -vi unp-inplace /usr/bin
-		sudo cp -vi unp-inplace.desktop /usr/share/applications
+		sudo cp -vi ${srcdir}/unp-inplace /usr/bin
+		sudo cp -vi ${srcdir}/unp-inplace.desktop /usr/share/applications
 		done=true
 	;;
 	u)	# Uninstall
@@ -36,7 +38,7 @@ until $done; do
 		done=true
 	;;
 	r)	# Readme
-		less ./README
+		less ${srcdir}/README
 	;;
 	q)	# Quit
 		done=true
