@@ -32,7 +32,8 @@ unp-inplace [archive.gz] [somewhere/else/another.zip]
 I've also included a .desktop file, which /should/ allow you to 
 associate the script with mime-types in nautilus (so that selecting 
 and opening archive(s) runs unp-inplace on them in a shell). 
-I've yet to test this very much, and I don't think it works currently.
+I've yet to test this very much, but it seems to work on Debian/Gnome2.
+(Though not on Arch/Gnome3, for a reason as yet unknown.)
 
 ### License  ###
 Public domain; use, modify, and redistribute as you wish.
