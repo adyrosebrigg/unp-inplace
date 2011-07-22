@@ -2,7 +2,7 @@
 Type=Application
 Categories=Utility;
 Comment=Unpack (almost) everything
-TryExec="/usr/bin/unp-inplace %F"
+Exec=/usr/bin/unp-inplace %F
 Name=Unp
 GenericName=Archive Unpacker
 
