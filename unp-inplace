@@ -11,10 +11,10 @@ else
 for ARG in "$@"		# For each argument (archive file):
 do
 
-ARCHIVEPATH=$(readlink -f $ARG) # Get the full path to the archive,
-cd $(dirname $ARCHIVEPATH)	# cd to its parent directory,
-unp -U $ARCHIVEPATH		# unp the file there,
-cd -				# then return to the shell's last dir.
+ARCHIVEPATH=$(find "$ARG" -type f)	# Get the full path to the archive,
+cd "$(dirname "$ARCHIVEPATH")"		# cd to its parent directory,
+unp -U "$ARCHIVEPATH"			# unp the file there,
+cd -					# then return to the shell's last dir.
 
 done			# and reloop for the next archive.
 fi
