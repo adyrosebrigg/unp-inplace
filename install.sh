@@ -1,7 +1,7 @@
 #!/bin/bash
 #################################################################### License ###
 # unp-inplace - a tiny wrapper script for the unarchiver unp.
-# Written in 2011 by Ed Cunningham (ejc@tds.net)
+# Written in 2011 by Ady Rosebrigg (adyrosebrigg@gmail.com)
 #
 # To the extent possible under law, the author(s) have dedicated all 
 # copyright and related and neighboring rights to this software to the 
