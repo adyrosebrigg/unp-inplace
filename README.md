@@ -1,3 +1,5 @@
+**NOTICE: I have archived this repository along with most of my others because I no longer have time to maintain them. Feel free to fork per the licence of any given repo, and have fun! Hope you can put the code to good use.**
+
 # unp-inplace
 
 unp-inplace is a tiny little wrapper around unp. Just like unp, it lets 
